@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://use.fontawesome.com/aba0294777.js"></script>
+	<script src="https://kit.fontawesome.com/yourcode.js"></script>
+	<script src="https://kit.fontawesome.com/bad2ed10ba.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header align="center"><img width="350" height="150" src="data:image/png;base64,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" alt=""></header>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img width="35" height="35" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/DeloitteNewSmall.png/220px-DeloitteNewSmall.png" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Careers</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+
+    <div class="container pt-5" ><h2>Well Get back to you soon !!</h2></div>
+
+
+    <div class="container-fluid padding pt-5">
+        <div class"row welcome text-center">
+            <center>
+                <div class="col-12">
+                    <h1 >Our Tech Stack</h>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">These are some of the technologies we use to build products.</p>
+                </div>
+            </centre>
+        
+        
+        </div>
+        </div>
+
+        <!--icons-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-html5 fa-5x" aria-hidden="true"></i>
+            <h3>HTML5</h3>
+    
+        </div>
+    
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-bold fa-5x" aria-hidden="true"></i>
+            <h3>BOOTSTRAP</h3>
+    
+        </div>
+    
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-css3 fa-5x" aria-hidden="true"></i>
+            <h3>CSS3</h3>
+    
+        </div>
+        
+    </div>
+    <hr class="my-4">
+    </div>
+
+
+
+
+    
+            <!--Connect-->
+            <div class="container-fluid padding ">
+            <div class="row text-center padding">
+                <div class="col-12">
+                    <h2>Connect</h2>
+                </div>
+                <div class="col-12 social padding">
+                        <a href="#"><i class="fab fa-facebook-f fa-3x"></i>
+                        <a href="#"><i class="fab fa-instagram fa-3x"></i>
+                        <a href="#"><i class="fab fa-github fa-3x"></i>
+                        <a href="#"><i class="fab fa-linkedin-in fa-3x"></i>
+                </div>
+            
+            </div>
+            </div>
+
+
+    
+<!--Footer-->
+<footer>
+    <div class="container-fluid padding">
+    <div class="row text-center">
+            <div class="col-12">
+                <hr class="light">
+                <h5>Contact</h5>
+                <p>987654321</p>
+                <p>info@deloitte.com</p>
+                <p>London,UK</p>
+            </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5>&copy; Deloitte</h5>
+            </div>
+    </div>
+    </div>
+    
+    
+    </footer>
+    
+    
+
+
+</body>
+</html>

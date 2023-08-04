@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <!-- <script>function del() {
+        alert("Sorry")
+    }
+    function add(){
+        alert("Thanks")
+    }
+    </script> -->
+
+    <script type="text/javascript">
+        function addOn() { 
+        
+            if(document.getElementById('add').click)
+                document.getElementById('texto').innerHTML = "Thank you";
+         }
+
+         function delOn() { 
+        
+        if(document.getElementById('del').click)
+            document.getElementById('texto').innerHTML = "Deleted!!";
+     }
+        </script>
+</head>
+
+<body>
+    <h1>ToDo List</h1>
+
+    <ul>
+        <%
+            data.forEach(todo=> { %>
+            <li>
+                <span>
+                    <%= todo.todoTask %>
+                <p id="texto"></p>
+                </span>
+                
+                <form action="/delete" method="post">
+                    <input type="hidden" name="todoId" value="<%= todo.todoId %>">
+                    <button type="submit" id="del" onclick="delOn()">Delete</button>
+                    
+                </form>
+            </li>
+            <% }) %>
+    </ul>
+
+    <h2>Add New ToDo</h2>
+    <form action="/view" method="post">
+        <input type="text" name="todoTask" placeholder="Enter a new ToDo task" required>
+        <button type="submit" id="add" onclick="addOn()">Add</button>
+    </form>
+    
+    
+</body>
+
+</html>
